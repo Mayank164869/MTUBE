@@ -1,4 +1,4 @@
-# MTUBE
+# MTube
 A simple clone of the popular YouTube web application using React, Material UI and Youtube v3 API  
 
 API : https://rapidapi.com/ytdlfree/api/youtube-v31?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel
