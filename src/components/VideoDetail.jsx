@@ -28,12 +28,12 @@ const VideoDetail = () => {
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
         <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+          <Box sx={{overflow: "hidden", overflowY: "hidden", width: "100%", position: "static", top: "85px", ml: 3, mr: 2 }}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls />
-            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
+            <Typography color="#fff" variant="h6" fontWeight="bold" p={2}>
               {title}
             </Typography>
-            <Stack direction="row" justifyContent="space-between" sx={{ color: "#fff" }} py={1} px={2} >
+            <Stack direction="row" justifyContent="space-between" sx={{ color: "#fff" }} py={0.1} px={2} >
               <Link to={`/channel/${channelId}`}>
                 <Typography variant={{ sm: "subtitle1", md: 'h6' }}  color="#fff" >
                   {channelTitle}
@@ -51,7 +51,7 @@ const VideoDetail = () => {
             </Stack>
           </Box>
         </Box>
-        <Box px={2} py={{ md: 1, xs: 4 }} justifyContent="center" alignItems="center" >
+        <Box sx={{ position: "static", m: 2}} px={3} py={{ md: 1, xs: 4 }} justifyContent="center" alignItems="center"   >
           <Videos videos={videos} direction="column" />
         </Box>
       </Stack>
